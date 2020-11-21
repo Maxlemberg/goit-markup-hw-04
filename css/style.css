@@ -105,7 +105,6 @@
 .navi-address {
   display: flex;
   align-items: center;
-  /*padding-right: 15px;*/
 }
 
 .link-navi-address {
@@ -143,10 +142,14 @@
 }
 
 .img-address:hover,
-.link-navi-address:hover {
+.img-address:focus {
   fill: var(--accent-color);
 }
 
+.link-navi-address:hover,
+.link-navi-address:focus {
+  fill: var(--accent-color);
+}
 /*===========================   main   =============================*/
 
 .hero-section {
@@ -378,7 +381,7 @@
   margin-right: 0px;
 }
 
-.social-network:hover
+.social-network:hover,
 .social-network:focus {
   background-color: var(--accent-color);
 }
@@ -389,8 +392,8 @@
   fill: #afb1b8;
 }
 
-.social-network:hover .icon
-.social-network:focus .icon {
+.social-network:hover .img,
+.social-network:focus .img {
   fill: #ffffff;
 }
 
@@ -520,11 +523,11 @@ align-items: center;
   margin-bottom: 20px;
 }
 
-.social-footer {
+.social-network-box .social-network {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.social-footer:hover {
+.social-network-box .social-network:hover {
   background-color: var(--accent-color);
 }
 
